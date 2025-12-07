@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datos</title>
+    <!-- Conectamos el CSS global -->
+    <link rel="stylesheet" href="../Estilos/estilos.css">
+</head>
+<body>
+
+    <main>
+        <!-- Aside -->
+        <aside class="menu">
+            <h2>Finanzas</h2>
+            <nav>
+                <a href="../Agregar/Agregar.html">Agregar</a>
+                <a href="../Leer/Leer.html">Leer</a>
+                <a href="../Editar/Editar.html">Editar</a>
+                <a href="../Eliminar/Eliminar.html">Eliminar</a>
+                <a href="../Datos/Datos.html">Datos</a>
+            </nav>
+        </aside>
+
+        <!-- Contenido -->
+        <section>
+            <h1>Gestion de datos</h1>
+
+            <!-- Como se repite la informacion, lo mejor es darle una seccion de previsualizacion -->
+            <section  class="card">
+                <h2>Datos actuales (previsulizacion - ultimos 3 movimientos)</h2>
+
+                <strong>Saldo Actual:</strong>
+                <span id="saldo-actual">0</span>
+                <table>
+                        
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Monto</th>
+                            <th>Intención</th>
+                            <th>Fecha</th>
+                            <th>Tipo</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabla-movimientos">
+                        <!-- Aquí se insertan las filas -->
+                    </tbody>
+                </table>
+            </section>
+
+            <section  class="card">
+                <h2>Exportar datos</h2>
+                <button id="btn-exportar">Exportar a JSON</button>
+            </section>
+            
+            <section  class="card">
+                <h2>Importar datos</h2>
+                <input type="file" id="input-importar" accept=".json">
+            </section>
+
+            <section  class="card-warn">
+                <h2>Crear nuevos datos</h2>
+                <button id="btn-crear-nuevos">Crear datos nuevos</button>
+            </section>
+        </section>
+    </main>
+
+    <script src="Datos.js"></script>

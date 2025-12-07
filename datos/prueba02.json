@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "monto": -91,
+    "intencion": "boleto cine nacho",
+    "fecha": "2025-12-06",
+    "tipo": "credito"
+  },
+  {
+    "id": 2,
+    "monto": -546,
+    "intencion": "boletos cine fnaf amigos",
+    "fecha": "2025-12-04",
+    "tipo": "credito"
+  },
+  {
+    "id": 3,
+    "monto": -454.75,
+    "intencion": "temmu pedido dados - regalo ingrid",
+    "fecha": "2025-12-04",
+    "tipo": "credito"
+  },
+  {
+    "id": 4,
+    "monto": -183.98,
+    "intencion": "camara",
+    "fecha": "2025-12-02",
+    "tipo": "credito"
+  },
+  {
+    "id": 5,
+    "monto": -199.75,
+    "intencion": "halo",
+    "fecha": "2025-12-30",
+    "tipo": "credito"
+  },
+  {
+    "id": 6,
+    "monto": -6486,
+    "intencion": "nuevo celular",
+    "fecha": "2025-11-28",
+    "tipo": "credito"
+  },
+  {
+    "id": 7,
+    "monto": 2370,
+    "intencion": "ahorros",
+    "fecha": "2025-12-07",
+    "tipo": "debito"
+  }
+]

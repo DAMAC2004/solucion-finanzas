@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Finanzas - Agregar</title>
+
+  <!-- Conectamos el CSS global -->
+  <link rel="stylesheet" href="../Estilos/estilos.css">
+</head>
+<body>
+
+  <main>
+
+    <!-- Aside fijo -->
+    <aside class="menu">
+      <h2>Finanzas</h2>
+      <nav>
+        <a href="../Agregar/Agregar.html">Agregar</a>
+        <a href="../Leer/Leer.html">Leer</a>
+        <a href="../Editar/Editar.html">Editar</a>
+        <a href="../Eliminar/Eliminar.html">Eliminar</a>
+        <a href="../Datos/Datos.html">Datos</a>
+      </nav>
+    </aside>
+
+    <!-- Contenido -->
+    <section>
+      <h1>Agregar movimiento</h1>
+
+      <form id="form-agregar">
+
+        <label>
+          Monto:
+          <input type="number" id="monto" step="0.01" required>
+        </label>
+
+        <label>
+          Intención:
+          <input type="text" id="intencion" required>
+        </label>
+
+        <label>
+          Fecha:
+          <input type="date" id="fecha" required>
+        </label>
+
+        <label>
+          Tipo:
+          <select id="tipo">
+            <option value="debito">Débito</option>
+            <option value="credito">Crédito</option>
+          </select>
+        </label>
+
+        <button type="submit">Guardar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <script src="Agregar.js"></script>
+</body>
+</html>

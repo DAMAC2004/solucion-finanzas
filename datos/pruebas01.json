@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "monto": -1001,
+    "intencion": "prueba 01",
+    "fecha": "2025-12-06",
+    "tipo": "debito"
+  },
+  {
+    "id": 2,
+    "monto": 123,
+    "intencion": "prueba 02",
+    "fecha": "2025-12-06",
+    "tipo": "credito"
+  },
+  {
+    "id": 3,
+    "monto": -124,
+    "intencion": "prueba 011",
+    "fecha": "2025-12-06",
+    "tipo": "debito"
+  },
+  {
+    "id": 4,
+    "monto": 100000,
+    "intencion": "prueba 0111111111",
+    "fecha": "2025-12-06",
+    "tipo": "debito"
+  },
+  {
+    "id": 5,
+    "monto": 100,
+    "intencion": "prueba 01",
+    "fecha": "2025-12-06",
+    "tipo": "debito"
+  },
+  {
+    "id": 6,
+    "monto": -100,
+    "intencion": "prueba 01",
+    "fecha": "2025-12-06",
+    "tipo": "credito"
+  }
+]

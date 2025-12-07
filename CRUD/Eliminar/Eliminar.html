@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUD - Eliminar</title>
+  <!-- Conectamos el CSS global -->
+  <link rel="stylesheet" href="../Estilos/estilos.css"> 
+</head>
+<body>
+
+<main>
+  <!-- Aside fijo -->
+  <aside class="menu">
+    <h2>Finanzas</h2>
+    <nav>
+      <a href="../Agregar/Agregar.html">Agregar</a>
+      <a href="../Leer/Leer.html">Leer</a>
+      <a href="../Editar/Editar.html">Editar</a>
+      <a href="../Eliminar/Eliminar.html" class="activo">Eliminar</a>
+        <a href="../Datos/Datos.html">Datos</a>
+    </nav>
+  </aside>
+
+  <!-- Contenido -->
+  <section class="contenido">
+    <h1>Eliminar movimiento</h1>
+
+    <label>
+      Selecciona movimiento:
+      <select id="select-movimiento">
+        <option value="">-- Selecciona --</option>
+      </select>
+    </label>
+
+    <p id="info-movimiento" class="info"></p>
+
+    <button id="btn-eliminar" class="btn-eliminar" disabled>
+      Eliminar movimiento
+    </button>
+  </section>
+</main>
+
+<script src="Eliminar.js"></script>
+</body>
+</html>

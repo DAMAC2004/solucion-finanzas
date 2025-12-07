@@ -1,0 +1,205 @@
+/* ========== VARIABLES ========== */
+:root {
+  --primary: #0a2540;
+  --secondary: #4a90e2;
+  --background: #f4f6f8;
+  --card: #ffffff;
+  --text: #1c1e21;
+  --success: #2e7d32;
+  --danger: #c62828;
+  --ambar: #b26a00;
+  --darkblue: #0d3869;
+  --blue: #196cca;
+}
+
+/* ========== RESET BÁSICO ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+/* ========== LAYOUT ========== */
+main {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ========== ASIDE ========== */
+aside.menu {
+  width: 220px;
+  background-color: var(--primary);
+  color: white;
+  padding: 20px;
+}
+
+aside.menu h2 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+aside.menu nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 0.95rem;
+}
+
+aside.menu nav a:hover {
+  color: var(--secondary);
+}
+
+/* ========== CONTENIDO ========== */
+section, main > h1, main > form {
+  flex: 1;
+  padding: 30px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* ========== FORMULARIOS ========== */
+form {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 6px;
+  max-width: 500px;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+/* ========== BOTONES ========== */
+button {
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+/* ========== TABLAS ========== */
+table {
+  background: var(--card);
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: var(--primary);
+  color: white;
+}
+
+
+/* ========== UTILIDADES ========== */
+.credito {
+  color: var(--darkblue); 
+  font-weight: bold;
+}
+
+.debito {
+  color: var(--blue); 
+}
+
+.positivo {
+  color: var(--success);
+  font-weight: bold;
+}
+
+.negativo {
+  color: var(--danger);
+  font-weight: bold;
+}
+
+/* ========== Datos ========== */
+
+.card {
+  background: var(--card);
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.card-warn{
+  background: var(--card);
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  border: 3px solid var(--danger);
+}
+
+
+/* ========== Modal simple para confirmaciones ========== */
+.cg-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.cg-modal {
+  background: var(--card);
+  color: var(--text);
+  padding: 18px;
+  width: min(720px, 92%);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.cg-modal h3 { margin-bottom: 10px; }
+.cg-modal-content { max-height: 45vh; overflow: auto; margin-bottom: 12px; }
+.cg-modal-actions { display:flex; justify-content:flex-end; gap:8px; }
+
+/* Botones del modal */
+.cg-btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+.cg-btn-primary {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  background: var(--secondary);
+  color: white;
+  cursor: pointer;
+}
